@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Remove the Right White Space when a website are in Responsive mode */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header and Navbar Section Style */
+.logo-and-navbar-section {
+  display: block;
+  background-color:rgb(245, 171, 118);
+}
+
+/* - Logo And Text */
+.logo-and-text-section {
+  display: flex;
+  width: 450px;
+}
+
+.logo-and-text-section img {
+  margin-right: 15px;
+}
+
+.logo-text {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* - Logo and Text + Search and Hamburger */
+.logo-and-search-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 5px solid rgb(91, 91, 255);
+}
+
+.logo-and-navbar-section .search-section {
+  margin-top: 5px;
+}
+
+.search-section {
+  margin-right: 20px;
+  position: relative;
+}
+
+.search-section input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-section input {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 200px;
+  border: none;
+  position: absolute;
+  right: 2px;
+  top: -23px;
+}
+
+.search-section input:focus {
+  outline: none;
+}
+
+.search-section .search-button i {
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -1px;
+  margin-right: 15px;
+  transform: translateY(-20px);
+  right: 2px;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.search-section .search-button i:hover {
+  color: blue;
+  transition-duration: 0.5s;
+}
+
+.hamburger-menu-section {
+  display: none;
+}
+
+/* - Navbar Section */
+nav.navbar-section {
+  justify-content: right;
+  background-color: rgb(255, 149, 110);
+  padding: 15px;
+}
+
+nav.navbar-section ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav.navbar-section ul li {
+  list-style-type: none;
+}
+
+nav.navbar-section ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+nav.navbar-section ul li a:hover {
+  color: blue;
+  transition-duration: 0.5s;
+  background-color: aqua;
+}
+
+/* Content Section */
+
+/* - Home Section Style - */
+.home-section {
+  height: 475px;
+  padding: 25px;
+  background-image: url(img/Gambar\ GPIB\ Getsemani.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-section .home-text {
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+  text-shadow: -1px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black;
+  margin-top: 70px;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+/* - Year Theme, Vision, and Mission Section Style */
+.year-theme-vision-and-mission-section {
+  padding: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.year-theme-vision-and-mission-section-image img {
+  width: 400px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.year-theme-vision-and-mission-section-text {
+  width: 750px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+.year-theme-section, .vision-section, .mission-section {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Jadwal Ibadah Section Style */
+.jadwal-ibadah-section {
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.jadwal-ibadah-section h1.header-text {
+  font-size: 50px;
+  margin-bottom: 80px
+}
+
+.ibadah-hari-minggu {
+  margin-bottom: 150px;
+}
+
+.ibadah-hari-minggu h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.ibadah-hari-minggu img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* - Ibadah Umum dan Kategorial Hari Minggu Style */
+.ibadah-umum-section {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.ibadah-umum-section .ibadah-umum-time {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.ibadah-kategorial-hari-minggu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.ibadah-kategorial-hari-minggu img {
+  transition: transform .1s;
+  margin-bottom: 10px;
+}
+
+.ibadah-kategorial-hari-minggu img:hover {
+  transform: scale(1.3);
+}
+
+.ibadah-kategorial-hari-minggu .ibadah-pelkat-pt {
+  margin-top: 10px;
+}
+
+/* Ibadah Hari Biasa Section Style */
+.ibadah-hari-biasa-section h1.ibadah-hari-biasa-section-header {
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+/* - Ibadah Kategorial Sektor Section Style */
+.ibadah-kategorial-sektor-section {
+  margin-bottom: 100px;
+}
+
+.ibadah-kategorial-sektor-section h1.sektor-section-header {
+  font-size: 30px;
+}
+
+.ibadah-kategorial-sektor-section .sektor-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.sektor-section h1, .ibadah-sektor-gabungan-section h1{
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.sektor-section img, .ibadah-sektor-gabungan-section img {
+  border-radius: 15px;
+}
+
+.ibadah-kategorial-sektor-section-text {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+/* - Ibadah Kategorial Pelkat Style */
+.ibadah-kategorial-pelkat-section {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.pelkat-pkb h1, .pelkat-pkp h1, .pelkat-pklu h1, .pelkat-gp h1 {
+  font-size: 25px;
+}
+
+.pelkat-pkb h1 {
+  margin-bottom: 15px;
+}
+
+.pelkat-pkp img, .pelkat-pkb img, .pelkat-pklu img, .pelkat-gp img {
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.pelkat-pkb img, .pelkat-pklu img {
+  margin-bottom: 20px;
+}
+
+.pelkat-pkp h1 {
+  margin-bottom: 5px;
+}
+
+.pelkat-pklu h1 {
+  margin-bottom: 15px;
+}
+
+.pelkat-gp h1 {
+  margin-top: -5px;
+}
+
+.pelkat-pkp img, .pelkat-pkb img, .pelkat-gp img, .pelkat-pklu img {
+  transition: transform .1s;
+}
+
+.pelkat-pkp img:hover, .pelkat-pkb img:hover, .pelkat-gp img:hover, .pelkat-pklu img:hover {
+  transform: scale(1.1);
+}
+
+.ibadah-kategorial-pelkat-section-text {
+  font-size: 25px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.pelkat-text {
+  font-size: 20px;
+}
+
+/* Rhema Pagi Section Style */
+.rhema-pagi-section {
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.rhema-pagi-section video {
+  border: 15px solid blue;
+}
+
+.rhema-pagi-section video:hover {
+  border: 15px solid black;
+}
+
+.rhema-pagi-section h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+/* Bacaan Alkitab Sepekan Section Style */
+.bacaan-alkitab-sepekan-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.bacaan-alkitab-sepekan-section h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.bacaan-alkitab-sepekan-section img {
+  width: 800px;
+  margin-bottom: 50px;
+}
+
+/* Event and News Section Styling */
+.event-and-news-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.event-and-news-section h1 {
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+
+/* About Section Style */
+.about-gpib-section {
+  padding: 60px;
+  margin-bottom: 100px;
+}
+
+.about-gpib-section h1 {
+  margin-bottom: 60px;
+  font-size: 45px;
+}
+
+.about-gpib-section .about-gpib-images-and-text-section p {
+  text-align: justify;
+  font-size: 25px;
+}
+
+.about-gpib-section .about-gpib-images-and-text-section img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 3px;
+}
+
+/* Footer Section Styling */
+footer {
+  background-color: aqua;
+}
+
+.maps-contact-socialmedia-address-and-officehour-section {
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* - Maps Section Styling */
+.maps-section h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.maps-section iframe {
+  width: 350px;
+  height: 300px;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.maps-section iframe:hover {
+  border: 10px solid blue;
+  transition-duration: 0.5s;
+}
+
+/* - Contact and Social Media Section Styling */
+.social-media-and-youtube-section {
+  margin-top: 25px;
+}
+
+.social-media-logo {
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.social-media-logo i {
+  margin-right: 30px;
+}
+
+.social-media-logo a {
+  color: black;
+}
+
+.social-media-logo i:hover {
+  color: blue;
+  transition-duration: 0.5s;
+}
+
+.social-media-logo i#youtube-logo:hover {
+  color : red;
+  transition-duration: 0.5s;
+}
+
+.social-media-logo i#instagram-logo:hover {
+  color: blueviolet;
+  transition-duration: 0.5s;
+}
+
+.contact-us-section p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.contact-us-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-us-section a:hover {
+  color: blue;
+  transition-duration: 0.5s;
+}
+
+/* - Office Hour and Address Section Styling */
+.office-hour-and-address-section {
+  font-size: 18px;
+}
+
+.office-hour-section {
+  margin-top: 60px;
+}
+
+/* Copyright Section Styling */
+.copyright-section {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.copyright-section p {
+  text-align: center;
+}
+
+
+/* Responsive Website for Mobile Phone User */
+@media only screen and (max-width : 600px) {
+  /* - logo Navbar Section Styling for Mobile Phone */
+  .logo-and-text-section img {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+  }
+  
+  .hamburger-menu-section {
+    color: black;
+    display: block;
+    font-size: 40px;
+  }
+
+  .logo-and-text-section .logo-text {
+    font-size: 12px;
+    width: 180px;
+  }
+
+  .search-section {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* Home Section Styling for Mobile Phone */
+  .home-section .home-text {
+    font-size: 28px;
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  /* - Year Theme, Vision, and Mission Styleing for Mobile Phone */
+  .year-theme-vision-and-mission-section {
+    display: block;
+    padding: 20px;
+    width: auto;
+  }
+
+  .year-theme-vision-and-mission-section-image img {
+    width: 120px;
+    margin-bottom: 50px;
+  }
+
+  .year-theme-vision-and-mission-section-text {
+    width: 350px;
+    font-size: 14px;
+  }
+
+  /* - Jadwal Ibadah Section Styling for Mobile Phone */
+  .jadwal-ibadah-section {
+    padding: 20px;
+  }
+
+  .jadwal-ibadah-section h1.header-text {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .ibadah-hari-minggu h1 {
+    font-size: 20px;
+  }
+
+  .ibadah-umum-section img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .ibadah-umum-section .ibadah-umum-time {
+    display: block;
+    margin-left: -227px;
+    font-size: 20px;
+  }
+
+  .ibadah-kategorial-hari-minggu {
+    display: block;
+    margin-left: -326px;
+  }
+
+  .ibadah-kategorial-hari-minggu .ibadah-pelkat-pt {
+    margin-top: 70px;
+  }
+
+  .ibadah-kategorial-hari-minggu .ibadah-pelkat-pt img,
+  .ibadah-kategorial-hari-minggu .ibadah-pelkat-pa img {
+    margin-bottom: 20px;
+  }
+
+  /* - Ibadah Hari Biasa Section Styling for Mobile Phone */
+  .ibadah-hari-biasa-section {
+    padding: 5px;
+  }
+
+  .ibadah-hari-biasa-section h1.ibadah-hari-biasa-section-header {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  .ibadah-kategorial-sektor-section h1.sektor-section-header {
+    font-size: 20px;
+  }
+
+  .ibadah-kategorial-sektor-section .sektor-section {
+    display: inline-block;
+  }
+
+  .sektor-1-section, .sektor-2-section, .sektor-3-section {
+    margin-bottom: 40px;
+  }
+
+  .sektor-1-section img, .sektor-2-section img, .sektor-3-section img,
+.ibadah-sektor-gabungan-section img {
+    width: 350px;
+  }
+
+  .ibadah-kategorial-sektor-section-text {
+    font-size: 15px;
+  }
+
+  .ibadah-kategorial-pelkat-section {
+    display: inline-block;
+  }
+
+  .pelkat-pkb, .pelkat-pkp, .pelkat-pklu{
+    margin-bottom: 75px;
+  }
+
+  .pelkat-gp  {
+    margin-bottom: 15px;
+  }
+  
+  .ibadah-kategorial-pelkat-section h1, .ibadah-kategorial-pelkat-section .pelkat-text{
+    font-size: 20px
+  }
+
+  .ibadah-kategorial-pelkat-section-text {
+    font-size: 20px;
+  }
+
+  /* Rhema Pagi Harian Section Styling for Mobile Phone*/
+
+  .rhema-pagi-section {
+    padding: 15px;
+  }
+
+  .rhema-pagi-section h1 {
+    font-size: 30px;
+  }
+
+  .rhema-pagi-section video {
+    width: 350px;
+    height: 250px;
+  }
+
+  .rhema-pagi-section video source {
+    position: absolute;
+    height: 0;
+  }
+
+  /* Bacaan Alkitab Sepekan Section Styling for Mobile Phone */
+  .bacaan-alkitab-sepekan-section {
+    padding: 20px;
+  }
+
+  .bacaan-alkitab-sepekan-section img {
+    width: 350px;
+  }
+
+  .bacaan-alkitab-sepekan-section h1 {
+    font-size: 25px;
+  }
+
+  .bacaan-alkitab-sepekan-section blockquote {
+    font-size: 15px;
+  }
+
+  /* Event and News Section Styling for Mobile Phone */
+  .event-and-news-section {
+    margin: 80px 0;
+  }
+
+  .event-and-news-section h1 {
+    font-size: 25px;
+  }
+
+  /* AbouT Section Styling for Mobile Phone */
+  .about-gpib-section {
+    padding: 20px
+  }
+
+  .about-gpib-section h1 {
+    font-size: 25px;
+  }
+
+  .about-gpib-section .about-gpib-images-and-text-section {
+    display: inline-block;
+  }
+
+  .about-gpib-section .about-gpib-images-and-text-section img {
+    float: none;
+    margin-bottom: 25px;
+    margin-top: -25px;
+  }
+
+  .about-gpib-section .about-gpib-images-and-text-section p {
+    font-size: 20px
+  }
+
+  /* Footer Section Styling for Mobile Phone */
+  .maps-contact-socialmedia-address-and-officehour-section {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  .maps-section, .contact-and-social-media-section {
+    margin-bottom: 40px;
+  }
+}
